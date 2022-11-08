@@ -1,0 +1,146 @@
+/* 版心 92% */
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  min-width: 330px;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+/*  头部961以上部分 */
+/* 头部 */
+.header-961 {
+  width: 100%;
+  height: 3.5rem;
+  background-color: #5d5d58;
+}
+.header-961 div {
+  width: 92%;
+  height: 100%;
+  margin: 0 auto;
+}
+.header-961 div ul {
+  width: auto;
+  height: 100%;
+}
+.header-961 div ul li {
+  width: auto;
+  height: 100%;
+  float: left;
+}
+.header-961 div ul li:hover {
+  background-color: #333333;
+}
+.header-961 div ul li a {
+  padding: 0.85rem 1.5rem;
+  font-size: 1.6rem;
+  color: #cccccc;
+  line-height: 3.2rem;
+}
+.active {
+  background-color: #ffffff !important;
+  color: #333333 !important;
+}
+/* logo部分 */
+.logo {
+  width: 100%;
+  height: 8rem;
+  border-bottom: 1px solid #dddddd;
+}
+.logo .logoin {
+  width: 92%;
+  height: 100%;
+  margin: 0 auto;
+}
+.logo .logoin .logo-left,
+.logo .logoin .logo-right {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.logo .logoin .logo-left {
+  float: left;
+}
+.logo .logoin .logo-right {
+  float: right;
+}
+/*  头部720以下部分和721到960部分 */
+.header-960 {
+  width: 100%;
+  height: 6rem;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  padding: 0rem 2rem;
+}
+.header-960 .left {
+  width: auto;
+  height: 6rem;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+.header-960 .right {
+  width: auto;
+  height: 6rem;
+  float: right;
+  display: flex;
+  align-items: center;
+}
+.header-960 .right a {
+  width: 6rem;
+  height: 100%;
+}
+.header-960 .right a:nth-of-type(1) {
+  background: url("../img/search.png") no-repeat center center;
+  background-size: 2.8rem;
+}
+.header-960 .right a:nth-of-type(2) {
+  background: url("../img/menu.png") no-repeat center center;
+  background-size: 2.8rem;
+}
+/* 主要内容区域 */
+main {
+  width: 92%;
+  height: auto;
+  margin: 1rem auto;
+}
+main ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+main ul li {
+  width: 31%;
+  height: auto;
+}
+main ul li img {
+  width: 100%;
+}
+main ul li a {
+  display: block;
+  width: 100%;
+  font-size: 1.8rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #5f5f5f;
+}
+main ul li a:hover {
+  text-decoration: underline;
+}
+main ul li p {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  color: #424242;
+  line-height: 2.5rem;
+}
