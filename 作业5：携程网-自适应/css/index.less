@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  min-width: 370px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+/* 轮播图 */
+.swiper {
+  width: 100%;
+  height: 10rem;
+  .swiper-slide img {
+    width: 100%;
+    height: 10rem;
+  }
+}
+
+/* 主要内容部分 */
+main {
+  width: 99%;
+  height: auto;
+  margin: 0 auto;
+  ul {
+    width: 100%;
+    height: auto;
+    border-radius: 0.7rem;
+    margin-top: 0.7rem;
+    text-align: center;
+    overflow: hidden;
+    li {
+      width: 33.33%;
+      height: 5rem;
+      line-height: 5rem;
+      float: left;
+      box-sizing: border-box;
+      border-right: 1px solid #ffffff;
+      border-bottom: 1px solid #ffffff;
+      a {
+        color: #ffffff;
+        font-size: 1.5rem;
+      }
+      span {
+        width: 5rem;
+        height: 5rem;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        background-image: url(../images/sprite.png);
+        background-repeat: no-repeat;
+        background-size: 10.4rem;
+      }
+    }
+  }
+  ul:nth-of-type(1) > li {
+    background-color: #f36874;
+  }
+  ul:nth-of-type(2) > li {
+    background-color: #3d98ff;
+  }
+  ul:nth-of-type(3) > li {
+    background-color: #44c522;
+  }
+  ul:nth-of-type(4) > li {
+    background-color: #ff9f08;
+  }
+  ul > li:first-of-type {
+    height: 10rem;
+  }
+  ul:nth-of-type(4) > li:first-of-type {
+    height: 5rem;
+  }
+  ul:nth-of-type(1) > li > span {
+    background-position: 0.8rem -12.6rem;
+  }
+  ul:nth-of-type(2) > li > span {
+    background-position: 0.8rem -28.8rem;
+  }
+  ul:nth-of-type(3) > li > span {
+    background-position: 0.8rem -18rem;
+  }
+}
+
+/* 图片部分 */
+.pic {
+  width: 100%;
+  height: 7.5rem;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* 电话部分 */
+.tel {
+  width: 100%;
+  height: 4.6rem;
+  margin: 0 auto;
+  ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    li {
+      width: auto;
+      height: 100%;
+      &:nth-of-type(1) > a > span:nth-of-type(1) {
+        background: url(../images/sprite.png) no-repeat -6.5rem -19rem;
+        background-size: 13rem;
+      }
+      &:nth-of-type(2) > a > span:nth-of-type(1) {
+        background: url(../images/sprite.png) no-repeat -5.8rem -21.2rem;
+        background-size: 13rem;
+      }
+      &:nth-of-type(3) > a > span:nth-of-type(1) {
+        background: url(../images/sprite.png) no-repeat -6.5rem -38.6rem;
+        background-size: 13rem;
+      }
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: #333333;
+        span {
+          display: block;
+        }
+        span:nth-of-type(1) {
+          width: 100%;
+          height: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+/* 底部 */
+footer {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 1rem 7.8rem;
+  ul {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    li {
+      a {
+        color: #666666;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  p {
+    margin-top: 0.8rem;
+    font-size: 1.2rem;
+    color: #666666;
+  }
+}
