@@ -1,0 +1,9 @@
+.box {
+  width: 69rem;
+  margin: 0 auto;
+  background-color: #ffc0cb;
+  border: 1px solid #ff7073;
+}
+.box ul li {
+  width: 50%;
+}

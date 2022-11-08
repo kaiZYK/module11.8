@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 10px;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.box {
+  width: 108.5rem;
+  height: auto;
+  background-color: #ff0000;
+  box-sizing: border-box;
+  padding: 3rem;
+  margin: 0 auto;
+}
+.box .box-header {
+  width: 100%;
+  height: 5.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.box .box-header h2 {
+  font-size: 3rem;
+}
+.box .box-header a {
+  color: #5b666b;
+  font-size: 1.4rem;
+}
+.box ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.box ul li {
+  height: auto;
+  width: 25%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box ul li img {
+  width: 75%;
+}
+.box ul li p {
+  margin-top: 0.5rem;
+}
