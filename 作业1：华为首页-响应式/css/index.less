@@ -1,0 +1,160 @@
+// 颜色
+@color-gray: #cccccc;
+@color-black: #333333;
+
+// 背景颜色
+@bgc-gray: #5d5d58;
+@bgc-white: #ffffff;
+@bgc-black: #333333;
+
+/* 版心 92% */
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  min-width: 330px;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+/*  头部961以上部分 */
+/* 头部 */
+.header-961 {
+  width: 100%;
+  height: 3.5rem;
+  background-color: @bgc-gray;
+  div {
+    width: 92%;
+    height: 100%;
+    margin: 0 auto;
+    ul {
+      width: auto;
+      height: 100%;
+      li {
+        width: auto;
+        height: 100%;
+        float: left;
+        &:hover {
+          background-color: @bgc-black;
+        }
+        a {
+          padding: 0.85rem 1.5rem;
+          font-size: 1.6rem;
+          color: @color-gray;
+          line-height: 3.2rem;
+        }
+      }
+    }
+  }
+}
+.active {
+  background-color: @bgc-white !important;
+  color: @color-black !important;
+}
+
+/* logo部分 */
+.logo {
+  width: 100%;
+  height: 8rem;
+  border-bottom: 1px solid #dddddd;
+  .logoin {
+    width: 92%;
+    height: 100%;
+    margin: 0 auto;
+
+    .logo-left,
+    .logo-right {
+      width: auto;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+    .logo-left {
+      float: left;
+    }
+    .logo-right {
+      float: right;
+    }
+  }
+}
+
+/*  头部720以下部分和721到960部分 */
+.header-960 {
+  width: 100%;
+  height: 6rem;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  padding: 0rem 2rem;
+  .left {
+    width: auto;
+    height: 6rem;
+    float: left;
+    display: flex;
+    align-items: center;
+  }
+  .right {
+    width: auto;
+    height: 6rem;
+    float: right;
+    display: flex;
+    align-items: center;
+    a {
+      width: 6rem;
+      height: 100%;
+      &:nth-of-type(1) {
+        background: url("../img/search.png") no-repeat center center;
+        background-size: 2.8rem;
+      }
+      &:nth-of-type(2) {
+        background: url("../img/menu.png") no-repeat center center;
+        background-size: 2.8rem;
+      }
+    }
+  }
+}
+
+/* 主要内容区域 */
+main {
+  width: 92%;
+  height: auto;
+  margin: 1rem auto;
+  ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    li {
+      width: 31%;
+      height: auto;
+      img {
+        width: 100%;
+      }
+      a {
+        display: block;
+        width: 100%;
+        font-size: 1.8rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: #5f5f5f;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      p {
+        margin-top: 0.5rem;
+        font-size: 1.4rem;
+        color: #424242;
+        line-height: 2.5rem;
+      }
+    }
+  }
+}

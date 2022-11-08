@@ -4,10 +4,103 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>华为首页-响应式</title>
     <link rel="stylesheet" href="./css/index.css" />
+    <!-- 响应式 96.1rem 以上 -->
+    <link
+      rel="stylesheet"
+      href="./css/index-961.css"
+      media="screen and (min-width:961px) "
+    />
+    <!-- 响应式 72.1rem 到 96rem -->
+    <link
+      rel="stylesheet"
+      href="./css/index-721-960.css"
+      media="screen and (min-width:721px) and (max-width:960px)"
+    />
+    <!-- 响应式 72rem 以下 -->
+    <link
+      rel="stylesheet"
+      href="./css/index-720.css"
+      media="screen and (max-width:720px)"
+    />
   </head>
   <body>
-    <script src="./js/index.js"></script>
+    <!-- 头部961以上部分 -->
+    <!-- 头部 -->
+    <header class="header-961">
+      <div>
+        <ul>
+          <li>
+            <a href="##" class="active">首页</a>
+          </li>
+          <li>
+            <a href="##">个人与家庭用户</a>
+          </li>
+          <li>
+            <a href="##">企业用户</a>
+          </li>
+          <li>
+            <a href="##">运营商用户</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- logo部分 -->
+    <div class="logo">
+      <div class="logoin">
+        <div class="logo-left">
+          <a href="##">
+            <img src="./img/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="logo-right">
+          <a href="##">
+            <img src="./img/top-lan.jpg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 头部720以下部分和721到960部分 -->
+    <!-- 头部 -->
+    <header class="header-960">
+      <div class="left">
+        <a href="##">
+          <img src="./img/logo.png" alt="" />
+        </a>
+      </div>
+      <div class="right">
+        <a href="##"> </a>
+        <a href="##"> </a>
+      </div>
+    </header>
+
+    <!-- 主要内容区域 -->
+    <main>
+      <ul>
+        <li>
+          <img src="img/huawei01.jpg" />
+          <a href="##">孟加拉bKash：移动支付带来便利生活</a>
+          <p>
+            bKash作为BRAC银行的合资子公司，为孟加拉人提供移动金融服务。bKash简化货币从城市转移到农村的方式，为孟加拉国经济发展做出关键贡献，并持续改变当地人的生活方式。
+          </p>
+        </li>
+        <li>
+          <img src="img/huawei02.jpg" />
+          <a href="##">光大银行IT系统“瘦身”记</a>
+          <p>
+            近几十年，金融业成为信息技术和网络技术发展的最大受益者之一。上世纪90年代末，金融业充分利用信息科技的进步，带来各类金融产品的升级和服务、管理手段的提高，实现了金融业的“数据大集中”，也就是业内所说的“大集中1.0”。近几年，随着金融行业业务和云计算技术的突飞猛进，金融机构也正向“大集中2.0”模式悄然转变。
+          </p>
+        </li>
+        <li>
+          <img src="img/huawei03.jpg" />
+          <a href="##">哈马德机场：轻松管理海量监控数据</a>
+          <p>
+            卡塔尔位于欧亚大陆中部，理所当然地成为众多旅行和商务人士的中转地。位于卡塔尔首都多哈的哈马德机场，占地2200公顷，在2014年4月30日正式启用，年均客流量为2900万人次，预计每年最多可处理5千万客流、32万架次航班，以及200万吨货物。
+          </p>
+        </li>
+      </ul>
+    </main>
   </body>
 </html>
